@@ -6,9 +6,20 @@ Well isn't this schnazy? What do we have here? I updated the main site, [www.dan
 
 Some things that I did:
 
-* Implemented new site with HTML5 standards.
+* Implemented new site with HTML5 standards & properly validated.
 * Migrated to Heroku.
 * Setup [toto](http://github.com/cloudhead/toto) as the blogging engine.
+* Experimenting with using DISQUS as commenting platform for blog.
 * Created [archive](http://www.danielfischer.com "Archive of danielfischer.com before 9/11/2010") of all old posts previously created on [danielfischer.com](http://www.danielfischer.com). No style information was transferred. I wonder how this will affect SERP's?
+
+Before:
+
+![Pre 2010 Daniel Fischer Homepage](/images/posts/old_blog.png)
+![Pre 2010 Daniel Fischer Post Page](/images/posts/old_blog_post.png)
+
+After:
+
+![Post 2010 Daniel Fischer Homepage](/images/posts/new_site.png)
+![Post 2010 Daniel Fischer Blog](/images/posts/new_blog.png)
 
 What do you think? Do you like it? 

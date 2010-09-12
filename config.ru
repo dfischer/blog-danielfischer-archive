@@ -21,7 +21,7 @@ toto = Toto::Server.new do
     ::Haml::Engine.new(File.read("templates/pages/#{code}.haml"), :format => :html5, :ugly => true).render(@context)
   end
   set :author,      "Daniel Fischer"                               # blog author
-  set :title,       "Daniel Fischer's Blog"                   # site title
+  set :title,       "blogging on internet, life, ruby, and music."                   # site title
   # set :root,      "index"                                   # page to load on /
   # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
   set :markdown,  :smart                                    # use markdown + smart-mode
