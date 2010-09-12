@@ -1,0 +1,27 @@
+!!! Strict
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", 'xml:lang' => "en" }
+  %head
+    %title Daniel Fischer - #{title}
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    %script{:type => "text/javascript"}
+      var disqus_developer = 1;       
+  %body
+    .container.showgrid
+      %header#main-header
+        %img{:src => '/images/avatar.jpg'}
+        %hgroup
+          %h1 
+            %a{:href => '/', :title => "Daniel Fischer's Blog, the Los Angeles Geek"} Daniel Fischer's Blog
+          %h2
+            Creative / Entreprenuer / Techie
+            %span.hybrid-badge C/E/T
+        %a#hire-me{:href => 'mailto:info@hybridgroup.com?subject=I want to hire Daniel Fischer'} Hire Me
+        %a#back-to-df{:href => 'http://www.danielfischer.com'} &laquo; back to df.com
+      = yield
+      %footer
+        %a{:href => "http://blog.danielfischer.com"} &laquo; Back to blog.danielfischer.com
+        %a{:href => "http://www.danielfischer.com"} &laquo; Back to www.danielfischer.com
+        %section#copyright
+          All content &copy; 1999-2010 Daniel Fischer

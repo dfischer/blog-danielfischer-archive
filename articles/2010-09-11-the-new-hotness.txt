@@ -1,0 +1,14 @@
+--- 
+title: The New Hotness
+date: 11/09/2010
+
+Well isn't this schnazy? What do we have here? I updated the main site, [www.danielfischer.com](http://www.danielfischer.com "Daniel Fischer Homepage"). I hope you like it. I felt like I needed a refreshing new look and feel. I haven't had much time to put some polish on my aesthetics in a while.
+
+Some things that I did:
+
+* Implemented new site with HTML5 standards.
+* Migrated to Heroku.
+* Setup [toto](http://github.com/cloudhead/toto) as the blogging engine.
+* Created [archive](http://www.danielfischer.com "Archive of danielfischer.com before 9/11/2010") of all old posts previously created on [danielfischer.com](http://www.danielfischer.com). No style information was transferred. I wonder how this will affect SERP's?
+
+What do you think? Do you like it? 
