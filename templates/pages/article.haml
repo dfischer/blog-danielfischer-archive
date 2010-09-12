@@ -7,6 +7,10 @@
     = body
   %section.comments
     - if @config[:disqus]
+      :javascript
+        var disqus_domain = 'disqus.com';
+        var disqus_shortname = "#{@config[:disqus]}";
+        var disqus_url = "#{@config[:base_url]}/#{@path}/";
       #disqus_thread
       :javascript
         (function() {

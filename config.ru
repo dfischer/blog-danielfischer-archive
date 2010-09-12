@@ -20,6 +20,10 @@ toto = Toto::Server.new do
   set :error do |code|
     ::Haml::Engine.new(File.read("templates/pages/#{code}.haml"), :format => :html5, :ugly => true).render(@context)
   end
+  set :error do |code|
+    ::Haml::Engine.new(File.read("templates/pages/#{code}.haml"), :format => :html5, :ugly => true).render(@context)
+  end
+  set :base_url,    "http://blog.danielfischer.com"
   set :author,      "Daniel Fischer"                               # blog author
   set :title,       "blogging on internet, life, ruby, and music."                   # site title
   # set :root,      "index"                                   # page to load on /
