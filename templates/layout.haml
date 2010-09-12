@@ -2,9 +2,9 @@
 %html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", 'xml:lang' => "en" }
   %head
     %title Daniel Fischer - #{title}
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => '/css/main.css'}
+    %link{:rel => 'alternate', :type => 'application/atom+xml', :title => "#{title} - feed", :href => '/index.xml'}
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=UTF-8'}
   %body
     .container.showgrid
       %header#main-header
