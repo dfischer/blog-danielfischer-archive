@@ -1,2 +1,29 @@
-%h1 404.
-%h2 It seems that you broke the internet. It's all your fault.
+!!! Strict
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", 'xml:lang' => "en" }
+  %head
+    %title Daniel Fischer - 404
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => '/css/main.css'}
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=UTF-8'}
+  %body
+    .container.showgrid
+      %header#main-header
+        %img{:src => '/images/avatar.jpg'}
+        %hgroup
+          %h1 
+            %a{:href => '/', :title => "Daniel Fischer's Blog, the Los Angeles Geek"} Daniel Fischer's Blog
+          %h2
+            Creative / Entreprenuer / Techie
+            %span.hybrid-badge C/E/T
+        %a#hire-me{:href => 'mailto:info@hybridgroup.com?subject=I%20want%20to%20hire%20Daniel%20Fischer'} Hire Me
+        %a#back-to-df{:href => 'http://www.danielfischer.com'} &laquo; back to df.com
+      %section#error
+        %hgroup
+          %h1 DANGER! DANGER! 404.
+          %h2 Actually, it's not that bad. You've just reached a point in time where nothing exists here yet. However, because the universe, or even pi is potentially infinite, then something will exist on this page at some point in time. Maybe check tomorrow?
+          %p In reality, nothing exists here and you should probably go back the other direction.
+          %a{:href => 'http://blog.danielfischer.com'} Return to the main blog site http://blog.danielfischer.com
+      %footer
+        %a{:href => "http://blog.danielfischer.com"} &laquo; Back to blog.danielfischer.com
+        %a{:href => "http://www.danielfischer.com"} &laquo; Back to www.danielfischer.com
+        %section#copyright
+          All content &copy; 1999-2010 Daniel Fischer

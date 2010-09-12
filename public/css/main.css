@@ -1681,7 +1681,7 @@ section h1, aside h1, footer h1 {
 }
 
 /* line 188, views/stylesheets/application.sass */
-section#archive, section#articles {
+section#archive, section#articles, section#error {
   margin-top: 150px;
 }
 
