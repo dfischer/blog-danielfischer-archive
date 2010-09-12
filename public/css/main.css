@@ -53,14 +53,9 @@ article.post {
   margin-top: 150px;
 }
 
-article.post date {
-  display: block;
+article.post header {
   margin-bottom: 30px;
 }
-
-article.post header {
-}
-
 
 article.post header h1 {
   font-size: 40px;
