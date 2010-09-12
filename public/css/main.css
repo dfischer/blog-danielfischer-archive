@@ -64,6 +64,14 @@ article.post header h1 {
   text-transform: none;
 }
 
+article.post header h2 {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 article.post section.content {
   font-size: 16px;
   margin-bottom: 50px;
