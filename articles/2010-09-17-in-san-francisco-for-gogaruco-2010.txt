@@ -1,0 +1,7 @@
+--- 
+title: In San Francisco for GoGaRuCo 2010
+date: 17/09/2010
+
+If you're in San Francisco for [GoGaRuCo 2010](http://gogaruco.com/) send me a [tweet to @dfischer](http://twitter.com/dfischer). I'll be in San Francisco until Saturday 6 p.m.
+
+I'm here with [Ron Evans](http://deadprogrammersociety.blogspot.com/) learning at the conference, and touting [Kanbanpad](http://www.kanbanpad.com "The Leanest Project Management System in the World")
