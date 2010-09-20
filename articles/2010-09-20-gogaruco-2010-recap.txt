@@ -2,7 +2,7 @@
 title: GoGaRuCo 2010 Recap
 date: 20/09/2010
 
-First off, wow! GoGaRuCo 2010 was amazing. It was such a powerful group of people that had an intense passion for Ruby and even more importantly, for the community that surrounds it. I am so happy to have been apart of this gathering. I learned a ton of amazing things, and also was able to put a face on many of the famous names that stroll around the internet.
+First off, wow! GoGaRuCo (Golden Gate Ruby Conference) 2010 was amazing. It was such a powerful group of people that had an intense passion for Ruby and even more importantly, for the community that surrounds it. I am so happy to have been apart of this gathering. I learned a ton of amazing things, and also was able to put a face on many of the famous names that stroll around the internet.
 
 It was cool to be able to be a sponsor of GoGaRuCo 2010. At the [Hybridgroup](http://www.hybridgroup.com) we were mainly getting feedback on [Kanbanpad](http://www.kanbanpad.com) as our target market is developers and we truly want to make something that works well and fits in a truly agile space.
 
