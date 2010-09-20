@@ -32,7 +32,9 @@ Yehuda Katz also gave an impressive [lightning talk on caching in Rails 3.1](htt
 
 ## Ryan Davis on Workflow
 
-Ryan Davis gave an interesting talk on "Workflow." Ryan showed off his work flow, Evan Phoenix showed off his, and lastly Rein Henrichs gave his on the panel. I think it's interesting to share what type of workflow people use, as the workflow of a professional can give insight into what makes them more efficient over others. Ryan is encouraging everyone to submit their workflow to him so he can work off that data and give a summary back to the community. At the same time I encourage everyone to create a post on their workflow so it can be surfaced to the community on a whole. Check [this blog post](http://blog.zenspider.com/2010/09/ill-show-you-mine-you-show-me.html) to send Ryan Davis the details of your workflow. I also encourage you to just write a blog post that contains the same thing. I will write on tomorrow.
+Ryan Davis gave an interesting talk on "Workflow." Ryan showed off his work flow, Evan Phoenix showed off his, and lastly Rein Henrichs gave his on the panel. I think it's interesting to share what type of workflow people use, as the workflow of a professional can give insight into what makes them more efficient over others. Ryan is encouraging everyone to submit their workflow to him so he can work off that data and give a summary back to the community. At the same time I encourage everyone to create a post on their workflow so it can be surfaced to the community on a whole. Check [this blog post](http://blog.zenspider.com/2010/09/ill-show-you-mine-you-show-me.html) to send Ryan Davis the details of your workflow. I also encourage you to write a blog post that contains your workflow. I'm assuming you can simply send that to Ryan and he can figure it from there.
+
+I will be writing a post on my workflow tomorrow. I'll send a tweet about it to get everyone in the loop.
 
 ## Hidden Gems of 1.9
 
