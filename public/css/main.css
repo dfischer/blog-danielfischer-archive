@@ -1709,3 +1709,7 @@ footer hgroup h2 {
 footer p {
   color: #777777;
 }
+
+.dsq-comment-message {
+  font-size: 14px;
+}
