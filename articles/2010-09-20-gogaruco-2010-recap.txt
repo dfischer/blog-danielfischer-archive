@@ -1,0 +1,67 @@
+--- 
+title: GoGaRuCo 2010 Recap
+date: 20/09/2010
+
+First off, wow! GoGaRuCo 2010 was amazing. It was such a powerful group of people that had an intense passion for Ruby and even more importantly, for the community that surrounds it. I am so happy to have been apart of this gathering. I learned a ton of amazing things, and also was able to put a face on many of the famous names that stroll around the internet.
+
+It was cool to be able to be a sponsor of GoGaRuCo 2010. At the [Hybridgroup](http://www.hybridgroup.com) we were mainly getting feedback on [Kanbanpad](http://www.kanbanpad.com) as our target market is developers and we truly want to make something that works well and fits in a truly agile space.
+
+I'm not going to give a summary on the whole conference in itself, but a summary of what struck out to me the most:
+
+## ExplainRuby.net
+
+Mislav [created something that is truly amazing](http://explainruby.net/). His inspiration for creating this stemmed from _why. Mislav received a famous heckle while presenting this in a lightning talk that sounded like the following: "Mislav, this is fucking AMAZING!" (from [Ryan Davis](http://blog.zenspider.com) of all people!). Check out [http://explainruby.net](http://explainruby.net/).
+
+This is truly an amazing piece of educational technology. I encourage all of you to check out [explainruby.net](explainruby.net). This will give an opportunity to teach others programming and Ruby and allow us to grow our very important ecosystem. We must provide an environment that cherishes the learning of Ruby and programming.
+
+## Ticket.rb
+
+> Ticketmaster provides a universal API to ticket tracking and project management systems. You can use it to connect an application to any ticketing system with a supported provider. You can also use the command line interface to easily manage your workflow when using one or more different back end project management or ticketing systems.
+
+[Ticketmaster](http://www.ticketrb.com) by Ron Evans. If you've ever been frustrated with dealing with multiple ticketing systems this may be your solution. 
+
+## Yehuda and Rails 3.1
+
+* Yehuda Katz gave an interesting presentation on Rails 3.1. The part that really stuck out to me was the attention that the "View" side was receiving of MVC. As a front-end developer I really feel like the view side is lacking in terms of practice, and attention. Rails 3.1 will natively support SCSS, Coffeescript, as well as other ery cool caching abilities. 
+
+Does anyone have a link to Yehuda's presentation on Rails 3.1?
+
+## Yehuda ⚡ Talk on Caching in Rails 3.1
+
+Yehuda Katz also gave an impressive [lightning talk on caching in Rails 3.1](http://bit.ly/aZ7pHm). Check out these slides. I found it very impressive and beneficial in terms of learning on how he presented the slides. He "built the code up", and "back down again" to show the concept as a whole.
+
+## Ryan Davis on Workflow
+
+Ryan Davis gave an interesting talk on "Workflow." Ryan showed off his work flow, Evan Phoenix showed off his, and lastly Rein Henrichs gave his on the panel. I think it's interesting to share what type of workflow people use, as the workflow of a professional can give insight into what makes them more efficient over others. Ryan is encouraging everyone to submit their workflow to him so he can work off that data and give a summary back to the community. At the same time I encourage everyone to create a post on their workflow so it can be surfaced to the community on a whole. Check [this blog post](http://blog.zenspider.com/2010/09/ill-show-you-mine-you-show-me.html) to send Ryan Davis the details of your workflow. I also encourage you to just write a blog post that contains the same thing. I will write on tomorrow.
+
+## Hidden Gems of 1.9
+
+[Aaron Patterson](http://tenderlovemaking.com/) did an amazing job at presenting about Ruby 1.9.2. Most notable to me was the replacement of Test::Unit with "Mini Test" and complaining why isn't he on the Rails core team. Valid question, why isn't he? A ton of people tweeted DHH after that. Oh, something that was also very valuable was "Psych." I wish I could point you to the slides for this talk as it was truly epic on so many levels and it would be impossible for me to cover everything without a blog post dedicated to this on its own.
+
+Mini Test is really interesting as it offers RSpec like notation for describing your tests. Built-in RSpec like notation is awesome. Ruby 1.9.2 FTW.
+
+In general throughout the conference seemed to be an overbearing amount of push towards "using Ruby 1.9.2 NOW. Not in the future but right now. Why aren't you using Ruby 1.9.2? There shouldn't be. Start using it and and today."  I agree with that sentiment 90%. However, there's one big problem: Engine Yard isn't fully supporting 1.9.2 yet. Woops.
+
+## Rich Kilmer, The Revolution Will Not Be Tweeted
+
+Rich Kilmer gave some very inspirational and educational thoughts on the Enterprise's importance in the Rails/Ruby ecosystem. He explained how it's dangerous for the community to simply say "f*** you to the Enterprise" and think everything will be okay. It's important to have compassion for these enterprise developers and to offer an amazing platform that they too can relish in.
+
+## Avi Bryant, Rails is Obsolete (But so's everything else)
+
+Avi Bryant gave a thought provoking talk on "Rails" being an old paradigm and how we have to possibly create a new framework to support the modern web. Rich Kilmer got up to the mic and had an interesting back and fourth between Avi on this subject. This talk in itself probably deserves its own blog post. It basically centered around the idea of "removing controllers and views, because most modern web apps are models and javascript." I feel like this isn't entirely true and there definitely is a place for the modern-web with the MVC paradigm. It simply needs to be tweaked and modernized with the latest practices. A new framework isn't a solution and will only push things further back on where we've gotten with Rails so far.
+
+## A nice quote
+
+A famous quote that I really liked was this from [Jim Weirich](http://www.twitter.com/jimweirich) "Abstractions are neither correct or incorrect, they are either useful or not."
+
+## In retrospect
+
+Does anyone know where the videos of the conference will be posted? I'd love to link to the information.
+
+I want to give a big shout out to all the people that helped organize and put GoGaRuCo 2010 together. You did an amazing job and I had an amazing time. It was great to meet all of you and I look forward to keeping in touch, and seeing you all again very soon.
+
+I am sorry if I missed out a lot of the details, however my summary is what stood out to me the most. If you want to share your thoughts on GoGaRuCo 2010 simply link your article in the comments and I'll be sure to include it at the bottom of the post.
+
+Also, please forgive me if anything was written oddly in this post. I am still quite tired for the conference and instead of waiting to write out a well written post I just wanted to get this out there before it is too late. Please provide more detail/links in the comments!
+
+See you all again soon!
