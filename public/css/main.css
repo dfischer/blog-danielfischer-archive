@@ -1717,7 +1717,7 @@ footer p {
 .dsq-comment-message {
   font-size: 14px;
 }
-.dsq-comment-message a:hover {
+ul#dsq-comments .dsq-comment-message a:hover {
   background-color: #F13838;
   color: #fff;
 }
