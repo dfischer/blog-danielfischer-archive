@@ -1,9 +1,8 @@
 %section#articles
   - for article in articles[0..3]
     %article
-      %hgroup
-        %h1
-          %a{:href => "#{article.path}"}= article.title
+      %h1
+        %a{:href => "#{article.path}"}= article.title
       %section.content
         = article.summary
         %a{:href => "#{article.path}"} read more &raquo;

@@ -77,6 +77,10 @@ article.post section.content {
   margin-bottom: 50px;
 }
 
+article.post section.content h2 {
+  
+}
+
 
 
 /* line 17, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -1712,4 +1716,8 @@ footer p {
 
 .dsq-comment-message {
   font-size: 14px;
+}
+.dsq-comment-message a:hover {
+  background-color: #F13838;
+  color: #fff;
 }
