@@ -1,0 +1,13 @@
+--- 
+title: Traveling, Conferences, and Work. Oh my!
+date: 18/10/2010
+
+I've been meaning to update the blog with an update to GoGaRuCo on my development environment but I haven't been able to do that. I've been doing a lot of traveling with [Ron Evans](http://deadprogrammersociety.blogspot.com/ "Ron Evans") between all these regional Ruby conferences. Last week we were in Boulder, Colorado at [Boulderrb](http://mountainrb.com/ "Boulder Ruby"), and this past week we were in Colima, México. Both conferences were absolutely amazing.
+
+Boulder in general was just a great conference. It's great to attend conferences that aren't overly large. I really like these regional Ruby conferences. They are just the right size to compliment learning, and mingling. 
+
+Colima, México was the most fun I've ever had a conference yet. Everyone was absolutely great to hang out with, and it was amazing to experience a new city and culture like I've never seen before. I really want to thank everyone at [Magmarails](http://www.magmarails.com/ "Magmarails") for putting on such an amazing conference and then showing Ron and I around. We had an amazing time!
+
+Ruby is growing at a rapid rate. I'm glad to see enthusiasm at all levels of expertise. 
+
+Next up, New Orleans Ruby Conference. See you there!
