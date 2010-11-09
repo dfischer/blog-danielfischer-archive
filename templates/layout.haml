@@ -1,22 +1,24 @@
 !!! Strict
 %html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", 'xml:lang' => "en" }
   %head
-    %title Daniel Fischer - #{title}
+    %title Daniel Fischer's Blog - #{title}
     %link{:rel => 'stylesheet', :type => 'text/css', :href => '/css/main.css'}
     %link{:rel => 'alternate', :type => 'application/atom+xml', :title => "#{title} - feed", :href => '/index.xml'}
     %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=UTF-8'}
   %body
     .container.showgrid
       %header#main-header
-        %img{:src => '/images/avatar.jpg'}
-        %hgroup
-          %h1 
-            %a{:href => '/', :title => "Daniel Fischer's Blog, the Los Angeles Geek"} Daniel Fischer's Blog
-          %h2
-            Creative / Entreprenuer / Techie
-            %span.hybrid-badge C/E/T
-        %a#hire-me{:href => 'mailto:info@hybridgroup.com?subject=I%20want%20to%20hire%20Daniel%20Fischer'} Hire Me
-        %a#back-to-df{:href => 'http://www.danielfischer.com'} &laquo; back to df.com
+        #who-am-i
+          %hgroup
+            %h1 
+              %a{:href => '/', :title => "Daniel Fischer's Blog"} DFischer Blog
+            %h2
+              +1 to <strong>Reading</strong>
+          %a.avatar{:href => '/', :title => "Daniel Fischer, The Los Angeles Geek Homepage"}
+            %img{:src => '/images/avatar_alt.png', :alt => "Daniel Fischer's Picture"}
+        #hybrid-set
+          :markdown
+            You've done it. You've found my blog. Here you will find my thoughts, technical know-how, and various ramblings that I wish to share. If this is your cup of tea, then please, drink up. Otherwise, you may want to [return to www.danielfischer.com](http://www.danielfischer.com "Return to the main page").
       = yield
       %footer
         %a{:href => "http://blog.danielfischer.com"} &laquo; Back to blog.danielfischer.com

@@ -1415,10 +1415,44 @@ footer section#my-posts {
   overflow-x: hidden;
 }
 
+
+#action-links {
+  left: 0px;
+  padding-left: 0px;
+  position: absolute;
+  top: 97px;
+}
+/* line 29, views/stylesheets/application.sass */
+#action-links li {
+  list-style: none;
+  margin: 0px 0px 7px 0px;
+}
+/* line 32, views/stylesheets/application.sass */
+#action-links a {
+  background: #6ca6e4;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  -o-border-radius: 4px / 4px;
+  -ms-border-radius: 4px / 4px;
+  -khtml-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #6ca6e4), color-stop(100%, #3e87d3));
+  background-image: -moz-linear-gradient(top, #6ca6e4 0%, #3e87d3 100%);
+  background-image: linear-gradient(top, #6ca6e4 0%, #3e87d3 100%);
+  color: white;
+  font-size: 13px;
+  padding: 2px 14px;
+}
+/* line 39, views/stylesheets/application.sass */
+#action-links a:hover {
+  background: #3e87d3;
+}
+
+
 /* line 52, views/stylesheets/application.sass */
 header#main-header {
   background-color: white;
-  border-bottom: 1px solid #dfdfdf;
+  border-bottom: 1px dotted #dfdfdf;
   margin-bottom: 40px;
   opacity: 0.9;
   padding-top: 20px;
@@ -1426,20 +1460,60 @@ header#main-header {
   width: 950px;
   z-index: 9999;
 }
+
+#who-am-i {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+}
+
+#who-am-i hgroup {
+  float: right;
+  margin-right: 15px;
+}
+
+#who-am-i hgroup h1 {
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 25px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+#who-am-i hgroup h2 {
+  color:#6CA6E4;
+  font-size:14px;
+  font-weight:300;
+  letter-spacing:-0.5px;
+  line-height:14px;
+  text-transform:uppercase;  
+}
+
+#who-am-i hgroup h2 strong {
+  color: #333;
+}
+
+#who-am-i hgroup h2 span.hybrid-badge {
+  -moz-border-radius:4px 4px 4px 4px;
+  -moz-box-shadow:0 0 5px 0 black;
+  background-image:-moz-linear-gradient(center top , #FBFBFB 0%, #E7E7E7 100%);
+  color:black;
+  font-size:12px;
+  font-weight:400;
+  letter-spacing:1px;
+  margin-left:7px;
+  padding:0 5px;  
+}
+
 /* line 60, views/stylesheets/application.sass */
 header h1, header h2, header span {
   -webkit-font-smoothing: antialiased;
 }
 /* line 62, views/stylesheets/application.sass */
-header h1 {
-  color: black;
-  font-size: 48px;
-  font-weight: 600;
-  letter-spacing: -2px;
-  line-height: 36px;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-}
+
 /* line 70, views/stylesheets/application.sass */
 header h1 a, header h1 a:visited {
   color: black;
@@ -1459,9 +1533,9 @@ header h2 {
   text-transform: uppercase;
 }
 /* line 82, views/stylesheets/application.sass */
-header img {
+header a.avatar{
+  display: block;
   float: left;
-  margin-right: 10px;
 }
 /* line 85, views/stylesheets/application.sass */
 header span.hybrid-badge {
@@ -1492,28 +1566,7 @@ header span.hybrid-badge {
   position: absolute;
   top: 46px;
 }
-#hire-me {
-  background: #6ca6e4;
-  -webkit-border-radius: 4px 4px;
-  -moz-border-radius: 4px / 4px;
-  -o-border-radius: 4px / 4px;
-  -ms-border-radius: 4px / 4px;
-  -khtml-border-radius: 4px / 4px;
-  border-radius: 4px / 4px;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #6ca6e4), color-stop(100%, #3e87d3));
-  background-image: -moz-linear-gradient(top, #6ca6e4 0%, #3e87d3 100%);
-  background-image: linear-gradient(top, #6ca6e4 0%, #3e87d3 100%);
-  top: 20px;
-  color: white;
-  font-size: 14px;
-  left: -100px;
-  padding: 2px 18px;
-  position: absolute;
-}
-/* line 106, views/stylesheets/application.sass */
-#hire-me:hover {
-  background: #3e87d3;
-}
+
 
 /* line 109, views/stylesheets/application.sass */
 #just-tweeted {
@@ -1531,119 +1584,94 @@ header span.hybrid-badge {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 120, views/stylesheets/application.sass */
+/* line 127, views/stylesheets/application.sass */
 #hybrid-set {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 950px;
-  margin: 40px 0px 25px 0px;
+  width: 630px;
+  margin: 0px 0px 10px 0px;
 }
-/* line 139, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
+
+#hybrid-set p {
+  font-size: 13px;
+  line-height: 15.5px;
+}
+/* line 139, /home/slugs/281887_3a888b2_4f8c-fe991c59-0fc2-4a65-b593-81612568f409/mnt/.bundle/gems/ruby/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
 * html #hybrid-set {
   overflow-x: hidden;
 }
-/* line 124, views/stylesheets/application.sass */
-#hybrid-set h1:after {
-  content: ":";
+/* line 130, views/stylesheets/application.sass */
+#hybrid-set h1 {
+  color: #6ca6e4;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 25px;
 }
-/* line 127, views/stylesheets/application.sass */
+/* line 14, views/stylesheets/application.sass */
+#hybrid-set h1 strong {
+  color: black;
+}
+/* line 134, views/stylesheets/application.sass */
+#hybrid-set h1 strong {
+  display: block;
+  margin-top: 6px;
+}
+/* line 138, views/stylesheets/application.sass */
 #hybrid-set .skills#creative-skillset {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 390px;
+  width: 190px;
+  padding-right: 40px;
 }
-/* line 139, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
+/* line 139, /home/slugs/281887_3a888b2_4f8c-fe991c59-0fc2-4a65-b593-81612568f409/mnt/.bundle/gems/ruby/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
 * html #hybrid-set .skills#creative-skillset {
   overflow-x: hidden;
 }
-/* line 129, views/stylesheets/application.sass */
-#hybrid-set .skills#creative-skillset ul:last-child {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 190px;
-}
-/* line 139, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
-* html #hybrid-set .skills#creative-skillset ul:last-child {
-  overflow-x: hidden;
-}
-/* line 131, views/stylesheets/application.sass */
+/* line 141, views/stylesheets/application.sass */
 #hybrid-set .skills#entreprenuer-skillset {
   display: inline;
   float: left;
-  margin-right: 0;
-  width: 270px;
+  margin-right: 10px;
+  width: 190px;
+  padding-right: 40px;
 }
-/* line 139, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
+/* line 139, /home/slugs/281887_3a888b2_4f8c-fe991c59-0fc2-4a65-b593-81612568f409/mnt/.bundle/gems/ruby/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
 * html #hybrid-set .skills#entreprenuer-skillset {
   overflow-x: hidden;
 }
-/* line 133, views/stylesheets/application.sass */
+/* line 144, views/stylesheets/application.sass */
 #hybrid-set .skills#techie-skillset {
   display: inline;
   float: left;
-  margin-right: 10px;
-  width: 270px;
+  margin-right: 0;
+  width: 150px;
 }
-/* line 139, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
+/* line 139, /home/slugs/281887_3a888b2_4f8c-fe991c59-0fc2-4a65-b593-81612568f409/mnt/.bundle/gems/ruby/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
 * html #hybrid-set .skills#techie-skillset {
   overflow-x: hidden;
 }
-/* line 135, views/stylesheets/application.sass */
-#hybrid-set .skills#techie-skillset ul {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 110px;
-}
-/* line 139, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
-* html #hybrid-set .skills#techie-skillset ul {
-  overflow-x: hidden;
-}
-/* line 137, views/stylesheets/application.sass */
-#hybrid-set .skills#techie-skillset ul:last-child {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 150px;
-}
-/* line 139, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
-* html #hybrid-set .skills#techie-skillset ul:last-child {
-  overflow-x: hidden;
-}
-/* line 139, views/stylesheets/application.sass */
+/* line 146, views/stylesheets/application.sass */
 #hybrid-set .skills ul {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 150px;
   list-style: none;
-  margin-left: 0px;
+  margin: 0px;
   padding-left: 0px;
 }
-/* line 139, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
-* html #hybrid-set .skills ul {
-  overflow-x: hidden;
-}
-/* line 144, views/stylesheets/application.sass */
-#hybrid-set .skills ul:last-child {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 150px;
-}
-/* line 139, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
-* html #hybrid-set .skills ul:last-child {
-  overflow-x: hidden;
-}
-/* line 146, views/stylesheets/application.sass */
+/* line 150, views/stylesheets/application.sass */
 #hybrid-set .skills ul li {
-  color: silver;
+  color: #b9b9b9;
   font-size: 14px;
-  list-style: disc;
-  margin-left: 15px;
+  margin-left: 0px;
+  display: inline;
+}
+/* line 155, views/stylesheets/application.sass */
+#hybrid-set .skills ul li:after {
+  content: ", ";
+}
+/* line 157, views/stylesheets/application.sass */
+#hybrid-set .skills ul li:last-child:after {
+  content: "";
 }
 
 /* line 152, views/stylesheets/application.sass */
@@ -1749,6 +1777,16 @@ section#articles article h1 {
   font-size: 24px;
   text-transform: none;
 }
+
+section#articles article h1 a {
+  color: #6CA6E4;
+}
+
+section#articles article h1 a:hover {
+  background-color: #6CA6E4;
+  color: #fff;
+}
+
 
 section#articles article time {
   color: #888;

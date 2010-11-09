@@ -6,7 +6,8 @@
       %time= article.date
       %section.content
         = article.summary
-        %a{:href => "#{article.path}"} read more &raquo;
+        %a{:href => "#{article.path}"} 
+          %strong read more &raquo;
   
   %aside#archives
     %h1 Archives
