@@ -45,12 +45,29 @@ article hgroup h2 {
   margin-bottom: 0px;
 }
 
+article code {
+  background-color: #333;
+  color: #fff;
+  padding: 0px 0px;
+  /*-webkit-font-smoothing: subpixel-antialiased;*/
+}
+
+article a.img:hover {
+  background: none;
+}
+
 article p {
+  color: #555;
   font-size: 16px;
 }
 
 article.post {
+  display: inline;
+  float: left;
+  margin-right: 10px;
   margin-top: 150px;
+  padding-left: 320px;
+  width: 630px;
 }
 
 article.post header {
@@ -58,15 +75,17 @@ article.post header {
 }
 
 article.post header h1 {
+  color: #6CA6E4;
   font-size: 40px;
-  font-weight: 500;
-  letter-spacing: 0px;
+  font-weight: 200;
+  line-height: 40px;
   text-transform: none;
 }
 
 article.post header h2 {
-  color: #333;
+  color: #666;
   font-size: 12px;
+  font-style: italic;
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
@@ -78,9 +97,28 @@ article.post section.content {
 }
 
 article.post section.content h2 {
-  
+  line-height: 33px;
+  margin-left: -400px;
+  position: absolute;
+  text-align: right;
+  width: 370px;
 }
 
+article.post section.content blockquote p {
+  color: #777;
+  font-size: 14px;
+}
+
+article.post section.content p a img {
+}
+
+article.post section.content p strong {
+  color: #000;
+}
+
+article.post section.content small {
+  font-size: 12px;
+}
 
 
 /* line 17, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -1386,6 +1424,7 @@ header#main-header {
   padding-top: 20px;
   position: fixed;
   width: 950px;
+  z-index: 9999;
 }
 /* line 60, views/stylesheets/application.sass */
 header h1, header h2, header span {
@@ -1689,12 +1728,44 @@ section#archive, section#articles, section#error {
   margin-top: 150px;
 }
 
+section#articles {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  margin-top: 150px;
+  padding-left: 320px;
+  width: 630px;
+}
+
 section#articles p {
   margin-bottom: 0px;
 }
 
 section#articles article {
   margin-bottom: 40px;
+}
+
+section#articles article h1 {
+  font-size: 24px;
+  text-transform: none;
+}
+
+section#articles article time {
+  color: #888;
+  font-style: italic;
+  line-height: 21px;
+  margin-left: -400px;
+  position: absolute;
+  text-align: right;
+  width: 390px;
+}
+
+section#articles article section.content h2 {
+  display: none;
+}
+
+section#articles article section.content p {
+  display: inline;
 }
 
 /* line 191, views/stylesheets/application.sass */

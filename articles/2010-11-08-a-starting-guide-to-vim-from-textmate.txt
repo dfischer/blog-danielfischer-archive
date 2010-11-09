@@ -1,0 +1,241 @@
+--- 
+title: A Starting Guide to VIM from Textmate
+date: 08/11/2010
+
+## Daniel, What's Your Deal?
+
+For about four years I've been using **Textmate** almost every day. I'm very fast with it. I've always thought about switching over to **VIM** or **Emacs** but I have been scared of losing my speed. In fact, I've actually tried Emacs in the past and also wrote a [blog post](http://www.danielfischer.com/2008/12/16/emacs-on-osx-for-ruby-on-rails-development/ "Emacs on OSX for Ruby on Rails Development") on my experience. I liked it in general, but I ended up coming back to Textmate after a week. Why? I didn't really feel like I was gaining anything.
+
+So, why would I even _consider switching over to VIM?_ 
+
+* Server-Side SSH Editor
+* Split Windows
+* CTags
+* Large Development Community / Support
+* Mastery leads to effeciency greater than potential of Textmate.
+
+What do I mean by the last item? If you master VIM and its "special" commands, you can be terrifingly more effecient than what Textmate allows. The main reason being VIM's movement commands and VIM-only plugins.
+
+I feel like I'm as fast as I'm going to get in Textmate, but I want to be faster. I also really want to leverage some powerful plugins that the VIM community has created for development, and I also really want to leverage the power of split windows. 
+
+One use case for split windows that absolutely strikes my fancy is being able to see a front-end `.haml` file and also see the appropriate `.scss` file at the same time. Ooh, just the thought gives me a shrill of excitement.
+
+> So, bye for now Textmate. You've been great, but I don't see you providing me with many more advanced features. I've out grown you. I crave more complexity and efficiency. Of course you've told me that you have an improved version of yourself coming out in some vaporware universe of time, but I just don't know how to trust that. So for now my good friend, I am going to hang out with VIM.
+
+<small>I know you could argue using Emacs for the same things. However,
+I tried it, and I didn't like it. Something draws me more to Vim and
+that's what I'm comitting to.</small>
+
+## What's My Workflow Like?
+
+My general workflow: Front-End Development Heavy. Back-End Development as needed. 
+
+Beware, because below this sentence is a journey through my mind, and that can be a scary one indeed. You will see me talking to myself as if you were I, and I were you. Of course, this is to only answer questions within my own head, that may in fact also be in your head.
+
+## Shall We Proceed?
+
+> First off, which VIM installation do I go with? 
+
+There’s a few different installations that I came across, but it seems that MacVim is the standard right now. So off I go to install MacVim.
+
+I grabbed the latest snapshot of MacVim from GitHub. The reason I did
+this instead of downloading the one from the Google Code page is because
+the Google Code page installation is two years old, and the MacVim team
+has been under heavy development for the past two years, so you can
+imagine how much you are missing out on.
+
+[Download the latest snapshot here.](https://github.com/b4winckler/macvim/wiki "Download Latest MacVim Snapshot")
+
+Follow the instructions in the [wiki/Building](https://github.com/b4winckler/macvim/wiki/building "MacVim Wiki on Building") on how to install it.
+
+Be sure to copy `mvim` in the `src/MacVim/mvim` to `/usr/bin` so you can
+type `mvim` like you typed `mate` in `Terminal.app`
+
+## I Installed MacVim, Now What?
+
+First, let's tackle something valuable and simple. *Learning how to use VIM like a pro.*
+
+The first thing I did was fire up my terminal and type `vimtutor`.
+
+Notice that I didn't fire up MacVim to do the tutor. Biggest reason? I knew MacVim would
+look like crap without tweaking and I also didn't want to utilize the OS X adjusted shortcuts that MacVim provides. I prefer to go "style natural" in the beginning. You can skip this step if
+you want, but if you truly are coming from Textmate to VIM, I highly
+recommend you to take 30 minutes and just go through the quick tutorial.
+It'll give you a glimpse into the power of VIM and help remedy the steep learning curve that VIM requires.
+
+> Okay great. I have a general understanding of how to move around in
+> VIM and I see it's potential. Now it's time to fire up MacVim and make
+> it sexy and then figure out what common plugins there are that the
+> Ruby community uses.
+
+Why does the sexy part even matter? I’m a visual person. The editor that I use **must** be visually appealing to me, and visually reflect sexy code. This is how I interact with my material, and if it doesn’t look pleasing then I am turned off and cannot be productive. This is one of the reasons why I picked Textmate from the beginning, the themes made the code look really attractive. I feel like I can get an *attractive and geeky* feel out of MacVim so let’s see how it ends up.
+
+Launch `macvim` by either opening it in your installation folder, or navigate towards a project and type `mvim .` like you would type `mate .`
+
+My biggest visual problems initially:
+
+* Black & White Theme
+* Scrollbars
+* Toolbar
+* Application Icon
+
+So first thing I do is create my own icon. Yes, I’m insane, I know.
+Let's just accept it, and move on.
+
+## MacVim Icon Fischy Style
+<a href="/images/posts/mac_vim_icon.png" title="Mac Vim Icon Fischy Style" class='img'><img src="/images/posts/mac_vim_icon.png" alt="Mac Vim Icon Fischy Style" height="100"></a>
+## MacVim Icon Fischy Style Dark
+<a href="/images/posts/mac_vim_icon_dark.png" title="Mac Vim Icon Dark Fischy Style" class='img'><img src="/images/posts/mac_vim_icon_dark.png" alt="Mac Vim Icon Dark Fischy Style" height="100"></a>
+
+Meh, it’s not amazing but it feels better to me. I can’t stand the pre 2000 looking icon for MacVim. I know, I’m crazy. Let’s just skip over to the next problems I hear in my head...
+
+## Let's Get Dirty with Themes & Plugins
+
+> Where do I begin to customize my theme? What are the standard plugins that the Ruby community uses? My solution? Ask people that know better than me: my network on Twitter.
+
+Within a couple minutes I had direction:
+ 
+* Use the [Github Janus](https://github.com/carlhuda/janus "Carlhuda's Janus") script for common plugins and themes. 
+
+Follow the instructions in the `README.markdown` which will also be
+outputted on the Github Janus Project Page.
+
+After you follow the instructions you should have a full installation of
+common plugins & themes that the majority Ruby VIM community uses.
+
+> Great, I have all of these awesome plugins and themes. How do I use
+> it? First, I need to change my damn theme!
+
+Depending on where you are, and what you've done. You may need to
+relaunch MacVim in order to pull in these new plugins. 
+
+Let's see some colors. Type `:color ` and then tab to see a list of
+installed colors. `molokai` is my favorite one that I stuck with and
+tweaked slightly. If you want to see your current theme simply type
+`:color`. [Here's a site](http://www.vi-improved.org/color_sampler_pack/) that shows you a preview of each installed theme that came with Janus.
+
+Once I was happy with my color settings I also realized I needed some
+transparency. In order to do that go to your prefrences `cmd + ,` click
+`advanced` and then click `Use experimental renderer`. 
+
+Once you do that, *open or create* `/your_home/.vimrc.local` and add the following:
+
+`set transparency=15`
+
+You'll have to *relaunch MacVim* to use the experimental renderer. Once
+you do that you can tweak the transparency at any time by typing `:set transparency=[value here]`
+
+> Awesome. I am starting to love the visual aspect of VIM and my code.
+> One more problem... these damn scrollbars are annoying me. How do I
+> get rid of that?
+
+Append the following to `/your_home/.vimrc.local`:
+
+`set guioptions=aAce`
+
+Relaunch MacVim and boom, everything should look pretty damn sexy now.
+
+> This is awesome. VIM looks awesome, my code syntax highlighting looks
+> awesome. But what the heck is that sidebar? How do I use it? What
+> plugins did Janus install that will help with my development? How does
+> MacVim help me over a standard terminal vim?
+
+Well, there's a lot to cover, and I'm not going to cover everything.
+What I recommend doing is simply reading the `README.markdown` of
+[Janus's project page](https://github.com/carlhuda/janus) and going over each plugin that is installed.
+
+What I will tell you though, is that the benefit of using MacVim is you
+have familiar key bindings natively installed to VIM like most OS X
+applications. `cmd + s`, etc.
+
+One thing you may not notice initially, especially if you've used VIM
+exlusively in a terminal enviornment, is that you're able to interact
+with MacVim using your mouse. If you initially open MacVim and click in
+that project drawer looking thing, you'll notice you can double click
+and open files. This is cool. You can also drag the columns to resize
+the split windows.
+
+That brings me to another thing. Split windows. You have two awesome
+commands at your utility.
+
+`:split:` and `:vsplit`
+
+I tend to use `:vsplit` more than `:split`
+
+For example, in `terminal.app` open up a typical rails project
+`cd ~/Projects/some_rails_project` then type `mvim .` the same way you
+would have to open up a project with `mate .`
+
+You should have MacVim open with two windows. Both are using NERDTree
+for that project drawer looking thing. That's fine, use the right buffer
+and open up a file.
+
+> Cool! It opened up a file and I see sexy syntax. 
+
+Now type `:vsplit`
+
+> Wow! That's pretty cool. I can look at multiple files at once. I like
+> this!
+
+Yes, yes, I know. It is a very powerful feature. Probably my favorite
+feature. Now to see something cool, use your mouse to select one of the
+buffers and then type `cmd + t` (yes, you'l recognize that from
+Textmate) and open up another file. 
+
+> Yes! I can see two files at once. This is awesome. And there is
+> familiarity with Textmate. I like where this is going.
+
+I like where this is going as well. The funny, and sad part is... this is
+only the tip of the iceberg. If I was going to go through everything
+that I've learned within a day, then... I don't know. I'd be more crazy
+than what I already sound like talking to myself in a blog post.
+
+One important command to remember is `:bd`. What is this? Well you may have already asked this question “How do I close this window (which is technically a buffer)?” You need to type `:bd`. 
+
+Again, I highly recommend you to go through each example on the [Janus
+Github Project Page](https://github.com/carlhuda/janus). If you don't
+understand something, feel free to post a comment here and I'll help you
+out.
+
+## Cool Daniel, Share a Screenshot With Us!
+
+[![Vim
+Screenshot](/images/posts/vim_screenshot.png)](/images/posts/vim_screenshot.png)
+
+This screenshot from left to right (NERDTree, buffer 1, buffer 2)
+
+So, for now, I just recommend you to play around with a test Rails
+project. Try out the commands listed on the Janus page. Try out some
+commands from the tutorial. Try out commands on some guides on the
+internet. I'll share a couple links that I am reading and find useful.
+
+That should be a good enough quick-start for you.
+
+## Gotcha's
+
+If you work with **Sinatra** you’ll want the **ruby-sinatra syntax-highlighting** script. [Download that here.](https://github.com/hallison/vim-ruby-sinatra)
+
+If the NERDTree buffer isn't updated with the latest files, make sure
+that buffer is selected and then simply hit `r` and it should refresh
+that buffer with the latest files.
+
+## Extra Links & Resources
+
+Here are some extra links that I find useful. Any of these should
+improve your knowledge of VIM one way or another.
+
+* [Use Vim Like a Pro](http://tottinge.blogsome.com/use-vim-like-a-pro)
+* [Github MacVim](https://github.com/b4winckler/macvim)
+* [Carlhuda's Janus](https://github.com/carlhuda/janus)
+* [Vim Mac Google Group](http://groups.google.com/group/vim_mac/topics)
+* [Vim Cheatsheet](http://www.worldtimzone.com/res/vi.html)
+* [Vimcasts.org](http://vimcasts.org/)
+* [Vim for Textmate Fans](http://alexyoung.org/2006/10/22/vim-for-textmate-fans/)
+
+## Your two cents?
+
+It's important for *you* to give your two cents in the comments. Help
+share your opinions with the readers and we can benefit the community
+together as a whole.
+
+**What are your essential plugins and settings for Vim?**
