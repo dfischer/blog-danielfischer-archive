@@ -1,6 +1,6 @@
 --- 
 title: A Starting Guide to VIM from Textmate
-date: 08/11/2010
+date: 08/17/2010
 
 ## Daniel, What's Your Deal?
 
@@ -14,7 +14,7 @@ So, why would I even _consider switching over to VIM?_
 * Large Development Community / Support
 * Mastery leads to effeciency greater than potential of Textmate.
 
-What do I mean by the last item? If you master VIM and its "special" commands, you can be terrifingly more effecient than what Textmate allows. The main reason being VIM's movement commands and VIM-only plugins.
+What do I mean by the last item? If you master VIM and its "special" commands, you can be terrifyingly more efficient than what Textmate allows. The main reason being VIM's movement commands and VIM-only plugins.
 
 I feel like I'm as fast as I'm going to get in Textmate, but I want to be faster. I also really want to leverage some powerful plugins that the VIM community has created for development, and I also really want to leverage the power of split windows. 
 
@@ -115,7 +115,7 @@ tweaked slightly. If you want to see your current theme simply type
 `:color`. [Here's a site](http://www.vi-improved.org/color_sampler_pack/) that shows you a preview of each installed theme that came with Janus.
 
 Once I was happy with my color settings I also realized I needed some
-transparency. In order to do that go to your prefrences `cmd + ,` click
+transparency. In order to do that go to your preferences `cmd + ,` click
 `advanced` and then click `Use experimental renderer`. 
 
 Once you do that, *open or create* `/your_home/.vimrc.local` and add the following:
@@ -149,11 +149,13 @@ have familiar key bindings natively installed to VIM like most OS X
 applications. `cmd + s`, etc.
 
 One thing you may not notice initially, especially if you've used VIM
-exlusively in a terminal enviornment, is that you're able to interact
+exclusively in a terminal environment, is that you're able to interact
 with MacVim using your mouse. If you initially open MacVim and click in
 that project drawer looking thing, you'll notice you can double click
 and open files. This is cool. You can also drag the columns to resize
 the split windows.
+
+## Split Windows
 
 That brings me to another thing. Split windows. You have two awesome
 commands at your utility.
@@ -179,7 +181,7 @@ Now type `:vsplit`
 
 Yes, yes, I know. It is a very powerful feature. Probably my favorite
 feature. Now to see something cool, use your mouse to select one of the
-buffers and then type `cmd + t` (yes, you'l recognize that from
+buffers and then type `cmd + t` (yes, you'll recognize that from
 Textmate) and open up another file. 
 
 > Yes! I can see two files at once. This is awesome. And there is
@@ -190,12 +192,21 @@ only the tip of the iceberg. If I was going to go through everything
 that I've learned within a day, then... I don't know. I'd be more crazy
 than what I already sound like talking to myself in a blog post.
 
-One important command to remember is `:bd`. What is this? Well you may have already asked this question “How do I close this window (which is technically a buffer)?” You need to type `:bd`. 
+## Window Shortcuts
 
-Again, I highly recommend you to go through each example on the [Janus
-Github Project Page](https://github.com/carlhuda/janus). If you don't
-understand something, feel free to post a comment here and I'll help you
-out.
+After splitting several windows, there were times I wanted to grow the window without dragging the column bar. After some research I figured out the way to do this was to type `ctrl` + `w` + (optional number for amount) + `> or <`
+
+So for example `ctrl` + `w` + `>`
+
+This will increase the current buffer's width by a single pixel. If I wanted to expand it by 50 pixels I would type `ctrl` + `w` + `50` + `>`
+
+There's also another cool command, type `ctrl` + `w` + `=` to equalize all buffer widths. 
+
+I think of `ctrl` + `w` as "control window."
+
+> I'm starting to get a hang of these split windows. One question though, how do I close one of the split windows?
+
+Hey, after all, this is about going from Textmate to VIM right? So, just type `cmd` + `w`. Yep, it feels just like home.
 
 ## Cool Daniel, Share a Screenshot With Us!
 
@@ -219,6 +230,8 @@ If the NERDTree buffer isn't updated with the latest files, make sure
 that buffer is selected and then simply hit `r` and it should refresh
 that buffer with the latest files.
 
+If you want spell check on in VIM, type `:set spell` and if you want to turn it off type `:set nospell`. It works just like it would have in Textmate when it is on. Simply hover over the word with your mouse, and *right click* to show suggestions on what to change it to. 
+
 ## Extra Links & Resources
 
 Here are some extra links that I find useful. Any of these should
@@ -231,6 +244,7 @@ improve your knowledge of VIM one way or another.
 * [Vim Cheatsheet](http://www.worldtimzone.com/res/vi.html)
 * [Vimcasts.org](http://vimcasts.org/)
 * [Vim for Textmate Fans](http://alexyoung.org/2006/10/22/vim-for-textmate-fans/)
+* [Spaced Repition Software to Master VIM](http://alfmikula.blogspot.com/2010/11/using-spaced-repetition-software-to.html)
 
 ## Your two cents?
 
