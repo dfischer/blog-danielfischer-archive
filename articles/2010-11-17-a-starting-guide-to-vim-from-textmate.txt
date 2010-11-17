@@ -11,20 +11,20 @@ So, why would I even _consider switching over to VIM?_
 * Server-Side SSH Editor
 * Split Windows
 * CTags
-* Large Development Community / Support
-* Mastery leads to effeciency greater than potential of Textmate.
+* Large Development Community & Support
+* Mastering VIM will lead to greater overall efficiency, given the limited potential of Textmate.
 
-What do I mean by the last item? If you master VIM and its "special" commands, you can be terrifyingly more efficient than what Textmate allows. The main reason being VIM's movement commands and VIM-only plugins.
+What do I mean by the last item? If you master VIM and its "special" commands, you can be shockingly more efficient than what Textmate allows. The main reason being VIM's movement commands and VIM-only plugins.
 
 I feel like I'm as fast as I'm going to get in Textmate, but I want to be faster. I also really want to leverage some powerful plugins that the VIM community has created for development, and I also really want to leverage the power of split windows. 
 
-One use case for split windows that absolutely strikes my fancy is being able to see a front-end `.haml` file and also see the appropriate `.scss` file at the same time. Ooh, just the thought gives me a shrill of excitement.
+One use case for split windows that absolutely strikes my fancy is being able to see a front-end `.haml` file and also see the appropriate `.scss` file at the same time. Ooh, just the thought gives me a bout of excitement.
 
 > So, bye for now Textmate. You've been great, but I don't see you providing me with many more advanced features. I've out grown you. I crave more complexity and efficiency. Of course you've told me that you have an improved version of yourself coming out in some vaporware universe of time, but I just don't know how to trust that. So for now my good friend, I am going to hang out with VIM.
 
-<small>I know you could argue using Emacs for the same things. However,
+<small>** I know you could argue using Emacs for the same points. However,
 I tried it, and I didn't like it. Something draws me more to Vim and
-that's what I'm comitting to.</small>
+that's what I'm committing to.</small>
 
 ## What's My Workflow Like?
 
@@ -86,8 +86,6 @@ Let's just accept it, and move on.
 <a href="/images/posts/mac_vim_icon.png" title="Mac Vim Icon Fischy Style" class='img'><img src="/images/posts/mac_vim_icon.png" alt="Mac Vim Icon Fischy Style" height="100"></a>
 ## MacVim Icon Fischy Style Dark
 <a href="/images/posts/mac_vim_icon_dark.png" title="Mac Vim Icon Dark Fischy Style" class='img'><img src="/images/posts/mac_vim_icon_dark.png" alt="Mac Vim Icon Dark Fischy Style" height="100"></a>
-
-Meh, it’s not amazing but it feels better to me. I can’t stand the pre 2000 looking icon for MacVim. I know, I’m crazy. Let’s just skip over to the next problems I hear in my head...
 
 ## Let's Get Dirty with Themes & Plugins
 
@@ -187,8 +185,8 @@ Textmate) and open up another file.
 > Yes! I can see two files at once. This is awesome. And there is
 > familiarity with Textmate. I like where this is going.
 
-I like where this is going as well. The funny, and sad part is... this is
-only the tip of the iceberg. If I was going to go through everything
+I like where this is going as well. The funny and sad part is... this is
+only the tip of the iceberg. If I were to go through everything
 that I've learned within a day, then... I don't know. I'd be more crazy
 than what I already sound like talking to myself in a blog post.
 
@@ -215,12 +213,10 @@ Screenshot](/images/posts/vim_screenshot.png)](/images/posts/vim_screenshot.png)
 
 This screenshot from left to right (NERDTree, buffer 1, buffer 2)
 
-So, for now, I just recommend you to play around with a test Rails
-project. Try out the commands listed on the Janus page. Try out some
+So, for now, I recommend that you tinker around with a test Rails
+project using VIM. Try out the commands listed on the Janus page. Try out some
 commands from the tutorial. Try out commands on some guides on the
-internet. I'll share a couple links that I am reading and find useful.
-
-That should be a good enough quick-start for you.
+internet. I'll share a couple links that I find useful at the bottom of this post.
 
 ## Gotcha's
 
