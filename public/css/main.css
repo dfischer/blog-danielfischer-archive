@@ -1344,8 +1344,32 @@ aside {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 270px;
+  width: 600px;
 }
+
+aside ol {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+aside ol li {
+  /*list-style-type: decimal-leading-zero;*/
+  list-style: none;
+  margin-bottom: 3px;
+  position: relative;
+}
+
+aside ol li date {
+  color: #888;
+  display: block;
+  font-style: italic;
+  left: -310px;
+  position: absolute;
+  text-align: right;
+  top: 0px;
+  width: 300px;
+}
+
 /* line 139, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/blueprint/stylesheets/./blueprint/_grid.scss */
 * html aside {
   overflow-x: hidden;

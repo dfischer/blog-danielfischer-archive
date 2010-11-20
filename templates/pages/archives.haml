@@ -1,5 +1,7 @@
-%ul
+%ol
   - if archives.length > 0
     - for entry in archives
       %li
-        %a{:href => entry.path}= entry.title
+        %a{:href => entry.path}
+          = entry.title
+        %date= entry.date
