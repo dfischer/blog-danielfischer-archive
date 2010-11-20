@@ -3,6 +3,7 @@
     %article
       %h1
         %a{:href => "#{article.path}"}= article.title
+        / = article.url
       %time= article.date
       %section.content
         = article.summary
