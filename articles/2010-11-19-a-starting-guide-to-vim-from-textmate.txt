@@ -1,6 +1,6 @@
 --- 
 title: A Starting Guide to VIM from Textmate
-date: 11/19/2010
+date: 19/11/2010
 
 ## Daniel, What's Your Deal?
 
