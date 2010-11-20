@@ -1,6 +1,0 @@
---- 
-title: Los Angeles November Ruby Meetup Recap
-date: 20/11/2010
-
-Once upon a time...
-
