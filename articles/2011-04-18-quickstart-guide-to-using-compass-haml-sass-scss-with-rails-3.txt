@@ -1,0 +1,136 @@
+--- 
+title: Quickstart Guide to Using Compass, Haml, SASS, SCSS with Rails 3
+date: 18/04/2011
+
+## Quick Backstory
+
+I regularly use Compass, Haml, SASS, and SCSS with Rails 3. I decided it
+would be helpful to create a quick-start guide on how to get an
+application set up with it.
+
+Use this guide as either a cheat sheet, or as a newbie a basic
+understanding of how to use these libraries together. At the end is a
+mini tutorial as a bonus.
+
+## Setup Rails 3 Application
+
+First we need to make sure we have the latest Rails gem.
+
+`gem install rails`
+
+As long as it's some version of 3 it shouldn't matter at the time of
+this writing.
+
+Now let's setup the application.
+
+`rails new rails-compass-haml-sass-scsss`
+
+Go into your application
+
+`cd cd rails-compass-haml-sass-scsss`
+
+Install Bundler to manage your gems
+
+`gem install bundle`
+
+Open up ./Gemfile
+
+After `gem rails', in your Gemfile; add Compass, Haml.
+
+`gem 'compass'`
+
+`gem 'haml'`
+
+Now you need to install the gems.
+
+`bundle install`
+
+## Configure Compass
+
+Now that you're setup with your gems. Now it is time to configure Compass.
+
+`compass init rails . --using blueprint/semantic`
+
+I accept default values for all. Just hit yes and enter.
+
+Then delete application.html.erb because you're using haml.
+
+`rm app/views/layouts/application.html.erb`
+
+Create `app/views/layouts/application.html.haml`
+
+Paste the following in application.html.haml
+
+    !!!
+    %html
+      %head
+        %title rails-compass-haml-sass-scss 
+        = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
+        = stylesheet_link_tag 'compiled/print.css', :media => 'print'
+        /[if lt IE 8]
+          = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+          = csrf_meta_tag
+      %body.bp
+        #container
+          = yield
+
+## Configure Rails 3 HAML Generator
+
+I configure Rails 3 to use HAML generators instead of
+ERB because it is annoying to constantly remove `.erb` files, and or edit them
+into HAML syntax.
+
+`git clone git://github.com/psynix/rails3_haml_scaffold_generator.git
+lib/generators/haml`
+
+Edit config/application.rb and add the following after `config.filter_parameteres +=[:password]`:
+
+    config.generators do |g|
+      g.template_engine :haml
+    end
+
+
+Now you're setup with Compass, Haml, SASS, and SCSS using Rails 3.
+
+## Bonus: Newbie Tutorial
+
+Don't know where to go from here? It's okay. I'll give you a quick tip
+if you're looking for some newbie help.
+
+Let's scaffold something quickly
+
+`rails generate scaffold Post`
+
+You will notice it's creating haml views. Good.
+
+Delete public/index.html
+
+`rm public/index.html`
+
+Run migrations or Rails will complain that the record doesn't exist,
+even though we don't really care about that for demonstration purposes.
+
+`rake db:migrate`
+
+Run the server
+
+`rails server`
+
+Point your browser to [http://localhost:3000/posts](http://localhost:3000/posts)
+
+Bam, now you're running with Rails 3 using Compass, Haml, Sass, and
+SCSS.
+
+Want to make a quick edit to the stylesheet as an example of workflow? Sure, open up
+app/views/stylesheets/screen.scss and add:
+
+`#container {@include container;}`
+
+Refresh [http://localhost:3000/posts](http://localhost:3000/posts) and now you'll see that it's centered. How? Well, since we told 
+Compass to initialize with Blueprint it has mixins already setup for the Blueprint library, and if you're familiar with the grid system
+you always have to have a container to center the layout utilizing the grid. Check out the [Compass Blueprint Docs](http://compass-style.org/docs/reference/blueprint/) if you want to learn more.
+
+Now you have a quick taste on the power of Compass while demonstrating
+how to use it all together in Rails 3.
+
+Enjoy!
