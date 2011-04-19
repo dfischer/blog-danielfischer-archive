@@ -133,4 +133,11 @@ you always have to have a container to center the layout utilizing the grid. Che
 Now you have a quick taste on the power of Compass while demonstrating
 how to use it all together in Rails 3.
 
-Enjoy!
+Hope this helped you.
+
+## Download Repo from Github
+
+If you want to download the repo from Github go ahead: 
+
+Github:
+[https://github.com/dfischer/Rails-3-Quickstart-Compass--Haml--Sass--SCSS](https://github.com/dfischer/Rails-3-Quickstart-Compass--Haml--Sass--SCSS)
