@@ -72,6 +72,7 @@ article.post {
 
 article.post header {
   margin-bottom: 30px;
+  position: relative;
 }
 
 article.post header h1 {
@@ -1764,6 +1765,12 @@ header span.hybrid-badge {
 #my-persona p strong {
   border-bottom: 1px dotted #dfdfdf;
   color: #333333;
+}
+
+#rdbWrapper {
+  bottom: -15px;
+  left: -185px;
+  position: absolute;
 }
 
 /* line 180, views/stylesheets/application.sass */
