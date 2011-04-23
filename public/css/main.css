@@ -1767,6 +1767,12 @@ header span.hybrid-badge {
   color: #333333;
 }
 
+#readability {
+  bottom: -2px;
+  left: -109px;
+  position: absolute;
+}
+
 #rdbWrapper {
   bottom: -15px;
   left: -185px;

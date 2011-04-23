@@ -2,16 +2,8 @@
   %header
     %h1= title
     %h2= date
-    #rdbWrapper
-      :javascript
-        (function() {
-            var s     = document.getElementsByTagName('script')[0],
-                rdb   = document.createElement('script');
-            rdb.type  = 'text/javascript';
-            rdb.async = true;
-            rdb.src   = document.location.protocol + '//www.readability.com/embed.js';
-            s.parentNode.insertBefore(rdb, s);
-        })();
+    #readability
+      <iframe border="0" scrolling="no" width="78" height="17" allowtransparency="true" frameborder="0" style="margin-bottom: -3px; z-index: 1338; border: 0px; background-color: transparent; overflow: hidden;" src="http://www.instapaper.com/e2?url=____&title=____&description=____"></iframe>
 
   %section.content
     = body
