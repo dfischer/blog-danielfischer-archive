@@ -56,6 +56,10 @@ article a.img:hover {
   background: none;
 }
 
+article ol {
+  padding-left: 0px;
+}
+
 article p {
   color: #555;
   font-size: 16px;
@@ -120,6 +124,8 @@ article.post section.content p strong {
 article.post section.content small {
   font-size: 12px;
 }
+
+article.post .super {font-size: 0.8em; position: relative; top: -0.5em;}
 
 
 /* line 17, /Users/Armageddon/.rvm/gems/ruby-1.8.7-p302@df/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
