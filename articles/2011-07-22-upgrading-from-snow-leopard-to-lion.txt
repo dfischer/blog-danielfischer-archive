@@ -1,0 +1,76 @@
+--- 
+title: Upgrading from Snow Leopard to Lion
+date: 22/07/2011
+
+## Lions, Snow Leopards, and Ruby, Oh My!
+
+How painful was the process upgrading from Snow Leopard to Lion? How did
+it affect my Ruby development workflow? Not bad. But there were some
+painful parts.
+
+I feel like outlining a quick process of what I went through, so here
+you go!
+
+## Step 1: Install Lion
+
+OS X App Store -> Purchase Lion -> Install.
+
+Fairly straightforward. This went fine. I'm impressed that the install
+process happens without anything but a download. This is really cool.
+Apple is innovating in great ways, and in many ways.
+
+## Step 2: Install XCode 4
+
+If you don't do this nothing will work. This part failed for me because
+it complained of some iTunes helper. I had to search for the process in
+Activity Helper to kill it. You can also try the following `ps -Af |
+grep iTunes` in terminal and then `kill -9` the appropriate task id.
+
+Once that was finally over I knew it was time to update homebrew, rvm,
+and all my gems.
+
+## Step 3: Update Homebrew
+
+You should update and upgrade homebrew for many reasons. One to ensure
+compatibility with Lion, and secondly you have to otherwise it won't run
+anything you installed previously due to the installation of XCode 4.
+
+This one was fairly simple. `brew update` and then `brew upgrade`.
+
+## Step 4: Update RVM
+
+`rvm update --head`
+`rvm reload`
+`rvm repair all`
+
+After this everything worked pretty smoothly. Except per a project I
+have to reinstall all my gems. There may be an easier way to do this but
+right now I'm just doing it manually per project I work on.
+
+## Step 5: Deleting gems per a project
+
+The gems need to be updated otherwise they won't reference the new
+libraries compiled.
+
+Here's what I had to run:
+
+  rvm gemset empty
+  gem install bundle
+  bundle install
+
+You are using bundler right? Otherwise this would be extremely painful.
+install bundle` 
+
+## Done, and my thoughts on Lion.
+
+So far so good. Lion is interesting. I like the new gestures. I set my
+scrollbar to autohide. I like the iOS style word auto-correction. I've
+only noticed this in Safari so far. The oddest thing is the reversing of
+the scrollbar direction. I am not changing it to the old ways, I shall
+conform to the new ways of the future. It makes sense with a touchpad,
+however if you use a mouse with a scroller it feels REALLY weird. I need
+to upgrade my mouse to a touch mouse for sure now.
+
+I'm not using Terminal.app anymore on Lion. I started to use iTerm 2.
+
+What are your thoughts and experience with Lion so far?

@@ -7,6 +7,14 @@
 
   %section.content
     = body
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="dfischer">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  %a.followme{:href => "http://www.twitter.com/dfischer", :target => "_blank"}
+    %h2 
+      Like what you read?
+      %strong Follow @DFischer
+      on Twitter and let's +1.
+    %p Twitter is still cool, right? Well, it's a good way to stay in touch and talk. I love to expand my network with other people in the industry. Say "hi!" and I'll follow back.
+
   %section.comments
     - if @config[:disqus]
       #disqus_thread

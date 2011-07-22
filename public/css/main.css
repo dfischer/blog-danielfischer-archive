@@ -18,6 +18,37 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
+a.followme {
+  display: block;
+  margin: 35px 0 10px 0;
+  background: #F6FBFF;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.6);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#F6FBFF', endColorstr='#D5E8F5');
+  background: -webkit-gradient(linear, left top, left bottom, from(#F6FBFF), to(#D5E8F5));
+  background: -moz-linear-gradient(top, #F6FBFF, #D5E8F5);
+  border: 1px solid #C3E0F2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+a.followme:hover {
+  background: #F6FBFF;
+}
+
+a.followme h2 {
+  border-bottom: 1px solid #D5EEEE;
+  font-size: 16px;
+  padding: 10px;
+}
+a.followme h2 strong {
+  color: red;
+}
+
+a.followme p {
+  padding: 10px;
+}
+
 article {
   -webkit-font-smoothing: antialiased;
 }
@@ -46,10 +77,11 @@ article hgroup h2 {
 }
 
 article code {
-  background-color: #333;
-  color: #fff;
-  padding: 0px 0px;
-  /*-webkit-font-smoothing: subpixel-antialiased;*/
+  background-color: white;
+  border: 1px solid #CACACA;
+  font-family: "Menlo", "Monaco", "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  font-size: 14px;
+  padding: 2px 3px;
 }
 
 article a.img:hover {
@@ -81,10 +113,11 @@ article.post header {
 
 article.post header h1 {
   color: #6CA6E4;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 200;
-  line-height: 40px;
+  line-height: 70px;
   text-transform: none;
+  
 }
 
 article.post header h2 {
@@ -1847,6 +1880,10 @@ section#articles article section.content h2 {
 
 section#articles article section.content p {
   display: inline;
+}
+
+section.followme {
+  
 }
 
 /* line 191, views/stylesheets/application.sass */
