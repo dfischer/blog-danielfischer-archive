@@ -32,7 +32,7 @@ around with Finder settings....
 
 ## HOLY MOLY FINDER SUCKS AND MY COMPUTER IS FAST AGAIN!
 
-I unchecked "show item preview" and clicked "use as default."
+I unchecked "show item info" and clicked "use as default."
 
 Queue the sound of absolute harmony... my computer already felt
 different the sudden I clicked that. It was almost as if I jumped from 5
