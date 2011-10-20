@@ -1,0 +1,51 @@
+--- 
+title: Wow, I just found a major performance bug in OSX.
+date: 20/10/2011
+
+## Finder really freaking sucks.
+
+I was doing my usual development and I have always felt like my computer
+is really slow. I've always blamed it on my development work-flow. I
+have a pretty intense set-up that I tab between very quickly. I have a few browsers open up at a
+time, with several tabs within each, and then I have Ruby running with a
+few processes including a server, and Compass compiling CSS stylesheets.
+
+Because of my work-flow, I've always thought that the slow-down on my
+computer was because of all the development. I never really noticed a
+slow-down outside of it.
+
+Anyway, today I started to get fed up. I had to wait 10+ seconds to
+refresh a page and get the CSS to compile from Compass and SASS. Then I
+had to wait another few seconds for Firefox to respond and render the request.
+Ugh, sluggish mess of hell! At this point I'm really frustrated so I
+started to investigate.
+
+I loaded up Activity Monitor and noticed that Finder was at 60% usage
+most of the time. I thought to myself, "Meh", it's probably just some
+resource management thing that OS X does that tries to optimize where
+the CPU is going; it also could have been spotlight reindexing the hard
+drive.
+
+Spotlight wasn't reindexing my hard-drive, and I started to think my
+theory of the CPU utilization was bullshit. So I started tinkering
+around with Finder settings....
+
+## HOLY MOLY FINDER SUCKS AND MY COMPUTER IS FAST AGAIN!
+
+I unchecked "show item preview" and clicked "use as default."
+
+Queue the sound of absolute harmony... my computer already felt
+different the sudden I clicked that. It was almost as if I jumped from 5
+FPS (game terminology) to 120 fps+.
+
+Lo' and behold' my CPU usage in Activity Monitor was <1% for Finder on
+average now.
+
+## Finder sucks.
+
+Finder really sucks and can eat up a TON of your CPU usage if you have
+the show item preview on. I don't know if it's a bug, or just a
+side-affect of the feature but due to the MASSIVE decrease in
+performance it seems like a bug.
+
+Apple needs to do something about this.
