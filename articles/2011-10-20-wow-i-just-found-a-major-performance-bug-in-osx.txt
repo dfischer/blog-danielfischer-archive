@@ -49,3 +49,5 @@ side-affect of the feature but due to the MASSIVE decrease in
 performance it seems like a bug.
 
 Apple needs to do something about this.
+
+edit: Forgot to point out. It's not "Finder Preferences", you can get to the settings by right clicking inside a finder window (in icon mode) and then click "Show View Options."
