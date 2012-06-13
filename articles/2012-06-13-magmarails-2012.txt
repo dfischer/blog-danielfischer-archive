@@ -1,0 +1,52 @@
+--- 
+title: Magmarails 2012
+date: 13/06/2012
+
+## Magma what?
+I just got back from [Magmarails](http://www.magmarails.com) in Mexico. It was an amazing trip. It
+was my first time presenting at a conference. Public speaking was a terrible
+source of anxiety and fear for me. I'm so happy that I actually overcame
+that fear and just did it. I'm extremely happy that it went so well,
+even with a curve ball in place; which apparently always happens.
+Despite the curve ball, I received applause and a lot of questions. This
+was amazing. Both in the fact that it made me more confident about
+presenting, and it also validated the problems I am speaking of. Thank
+you Magmarails for making me do it.
+
+Magmarails is a special conference. It's amazing not only because it's
+in Mexico, but it's amazing because of the hospitality, culture, and
+general quality of care. I've never gotten close to so many people in
+such a short amount of time at a conference. Every single person was
+amazing, and it was great that we could enjoy this not only at bars, but
+also in the ocean boogie boarding. It was great to have
+[@deadprogram](http://twitter.com/deadprogram),
+[@bmizerany](http://twitter.com/bmizerany),
+[@tenderlove](http://twtitter.com/tenderlove), and [@drnic](http://twitter.com/drnic) there. It was just as great to have these
+amazingly talented people be available to the entire conference for
+questions and inspiration. Most conferences don't get that ability
+because there's too many people. Magmarails is relatively small compared
+to most conferences and I found that to be amazing. It gives more
+opportunities to really learn and grow.  
+
+I learned a lot, and I had a lot of fun. It was an amazing time and I
+really look forward to next year, and giving another presentation. I
+also look forward to spending time with so many wonderful people. Truly
+a "life" experience.
+
+## What'd I present about?
+In case you're curious, I was presenting about [Front-End Development](https://speakerdeck.com/u/dfischer/p/what-is-front-end-development) and
+the problems associated with it. I'm starting a movement. It's called
+[#betterfrontend](https://twitter.com/#!/search/%23betterfrontend).
+
+I want to make Front-End Development better. It has two major issues
+right now, it's hard to learn, and it's hard to do well. Perhaps I can
+explain these issues more in-depth with a blog post, and or you can see
+me present. I need to hit up some more conferences now and really shove
+this fear out the window. If I don't present in a while I know it will
+come back again.
+
+## @kidpollo and @dfischer on the Mad Cow
+Anyway, I'll leave this post quickly with a nice gif summarizing my
+entire experience at #magmarails.
+
+![@kidpollo and @dfischer on the mad cow](https://s3.amazonaws.com/danielfischer-public/test3optimized.gif)
