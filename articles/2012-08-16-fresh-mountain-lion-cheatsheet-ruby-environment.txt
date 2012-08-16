@@ -1,0 +1,115 @@
+---
+title: Fresh Mountain Lion Cheatsheet Ruby Environment
+date: 16/08/2012
+
+## What happened?
+My 2009 Macbook Pro died. It was a Core 2 Duo. It deserved to die I
+guess. Three years is a very long time for computers, especially when
+you're a power-user who multitasks like a psychopath (me!).
+
+Between several Ruby processes, Photoshop, Multiple Browsers, Multiple
+Tabs, and Spotify open... yeah, no wonder my 2009 Macbook Pro died. It
+was ran into the ground and wanted to give up on life. Too much of the
+hard life.
+
+Anyway, on the **bright** side, that means I was forced to buy a brand new
+Macbook Pro. I was thinking of maybe making a switch to the Air, but
+then I realized I really want 16gb of Ram, as well as two hard drives.
+Yes, I said it, **two hard drives!** And no, I didn't get the Retina because
+if I noticed any slight bit of [FPS
+lag](http://www.anandtech.com/show/6023/the-nextgen-macbook-pro-with-retina-display-review/8) I'd be severely pissed off. 
+
+I grew up a gamer and I can notice frame lag very easily. I think what
+Apple is doing with Retina is great, but it's not for me yet. The
+graphics card they put in the Macbook Pro can simply NOT handle a
+resolution of 2880x1800 with 30+ fps in browsers let alone anything more
+demanding. 
+
+## What's the setup?
+Here's my new setup:
+
+* Macbook Pro (Non-Retina).
+* Processor: 2.6 GHz Quad Core i7 w/ multithreading for 8 cores.
+* Memory: 16 GB 1600 MHz DDR3
+* Hard Drive: Corsair GS 180gb SSD (Startup Disk + fast programs).
+* 2nd Hard Drive: Stock 750gb 5,400 RPM.
+
+I replaced the cd-bay with a 180gb SSD. I have *speed and storage* now. 
+
+The entire install process was relatively easy for the upgrades. If anyone wants a guide on how to do that I can do it, but let's get to the juicy bits. Once you have your new Macbook Pro up and running, what's the 2012 Quarter 4 way of getting a modern Ruby environment up and running?
+
+Make sure you **install Mountain Lion first** so you don't have to reinstall your entire development environment.
+
+## Cheat Sheet Install
+
+Below I'll outline the steps I took to setup my computer.
+
+* Set the 750 GB HD to spin down within 1 minute. (You'll most likely skip this).
+  * sudo pmset -a disksleep 5
+* Enter redeem code for Mountain Lion
+* Install Mountain Lion
+* Install XCode
+  * Open Xcode Go to Preferences
+  * Go to downloads
+  * Check 'iOS Simulator' (test site in iPhone, iPad simulator)
+  * Check 'Command line Tools' (gcc, etc)
+* Run Apple Software Update
+* Apple Preferences > Keyboard > Key Repeat Max Speed.
+* Apple Preferences > Keyboard > No Delay Until Key Repeat
+* Apple Preferences > Trackpad > Slightly faster track speed
+* Install Alfred.app
+* Install iTerm2
+  * Preferences > Uncheck show per-pane title bar in appearances (it's ugly).
+* Install Google Drive
+* Install Dropbox
+  * Go to preferences and use 'black & white icons'
+* Re symlink dotfiles from Dropbox to home directory.
+  * This took care of prettifying my iTerm w/ colors.
+* Install Homebrew 
+  * 'ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)'
+* brew install autoconf automake
+* brew tap homebrew/dupes
+* brew install apple-gcc42
+* Install RVM
+  * curl -L https://get.rvm.io | bash -s stable --ruby
+* rvm get head
+* brew install openssl
+  * [Issue details](http://railsapps.github.com/openssl-certificate-verify-failed.html)
+* rvm install 1.9.3 --with-openssl-dir=\`brew --prefix openssl\`
+* rvm --default use 1.9.3
+* If you need Ruby 1.8.7 you need X11 to compile it
+  * Install via: [http://xquartz.macosforge.org/landing/](http://xquartz.macosforge.org/landing/)
+  * export CPPFLAGS=-I/opt/X11/include
+  * CC=/usr/local/bin/gcc-4.2 rvm reinstall 1.8.7
+* brew install imagemagick
+* brew install postgresql
+  * initdb /usr/local/var/postgres
+  * mkdir -p ~/Library/LaunchAgents
+  * cp /usr/local/Cellar/postgresql/9.1.4/homebrew.mxcl.postgresql.plist ~/Library/LaunchAgents/
+  * launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+  * createdb [yourusername]
+* brew install macvi
+  * ln -s /usr/local/Cellar/macvim/7.3-64/MacVim.app /Applications
+  * Used my [blog post](http://blog.danielfischer.com/2010/11/19/a-starting-guide-to-vim-from-textmate/) for MacVim icons.
+    * Had to open /usr/local/Cellar/macvim/7.3-64 and right click the app there to replace the icon.
+
+## Extra thoughts
+
+Xcode 4.2 and later don't come with gcc. They ship with llvm-gcc which is only supported for Ruby 1.9.3. If you need to compile earlier versions of ruby you have to install apple gcc 4.2. Homebrew allows you to do this but you need to `tap` the dupes. #16 in the cheatsheet.
+
+I was able to install Windows 7 on my secondary drive without any issues. Bootcamp didn't complain about not having a cd-rom tray which has been reported pre 2012 Macbook Pro's. Only Macbook Pro's that didn't come with a cd-rom tray were able to install Windows 7 without a CD. This doesn't seem to be the case anymore.
+
+## Holy moly speed!
+
+I just want to point out... damn this laptop is an absolute beast.
+Nothing took longer than a minute to compile during that entire cheat
+sheet. 8 cores total w/ virtualization, 2 hard drives, 16 gigs of ram... oh I'm geeking
+out in performance heaven! And there's room to upgrade! Imagine Raid 0
+500gb SSD's...
+
+I highly recommend this setup to anyone out there looking to upgrade
+their laptop. And I also advise you to skip first gen Retina displays
+because of the animation (FPS) lag.
+
+## Your environment?
+What does your environment look like for 2012? Am I missing anything that would improve my workflow? Let me know!
